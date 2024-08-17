@@ -10,7 +10,7 @@
 <!-- Start Content -->
 <div id="home" class="w3-content">
 
-<!-- End Content -->
+<!-- End Content -->s
 </div>
 
 </body>
@@ -19,43 +19,63 @@
 <!-- Navigation (Stays on Top) -->
 <div class="w3-top w3-bar w3-black">
 <a href="#Home" class="w3-bar-item w3-button">Home</a>
-<a href="#About Us" class="w3-bar-item w3-button">About Us</a>
+<a href="#About" class="w3-bar-item w3-button">About</a>
 <a href="#Products" class="w3-bar-item w3-button">Products</a>
 <a href="#Contact" class="w3-bar-item w3-button">Contact</a>
-</div>
+</div
 
+ 
 <!-- Slides -->
 <img class="slides" src="slides image 1.jpg" width="100%">
 <img class="slides" src="slides image 2.jpeg" width="100%">
 <img class="slides" src="slides image 3.jpg" width="100%">
 <img class="slides" src="slides image 4.jpg" width="100%">
 <script>
-w3.slideshow(".slides", 1500);
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("slides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 5000); // Change image every 5 seconds
+}
 </script>
+
+</body>
+</html>
 
   <!-- About -->
 <div id="about" class="w3-container w3-padding-32">
-<h1 class="w3-center">ABOUT US - PERSONAL SCENTS . PERSONAL SCRIPT </h1>
+<h1 class="w3-center">ABOUT - PERSONAL SCENTS . PERSONAL SCRIPT </h1>
 <p>Love at first sight, is what describes my introduction and love for the making of scented candles, and the transition in your atmosphere, mood and state of well-being the aroma produces. Sentimental is just part of who we are. The feeling that derives from reading someone’s thoughts toward you, is enough to enhance any moment and make it more special. Our products produce an experience that mark a moment and a memory that will be cherished and forever held in the hearts of those receiveing them.</p>
 </div>
 
 <!-- PRODUCTS -->
 <div id="PRODUCTS" class="w3-container w3-padding-32">
-<h1 class="w3-center">PRODUCTS</h1>	
+<h1 class="w3-center">PRODUCTS</h1> 
 <div class="w3-row w3-center">
 
 <div class="w3-third">
-<img src="scented candles.jpg" alt="AROMAS" style="width:80%">
+<img src="scented candles.jpg" alt="AROMAS" style="height: 300px;
+  width: 80%;">
 <h1 class="w3-center">Candles & Aromas</h1>
 </div>
 
 <div class="w3-third">
-<img src="greeting card.jpg" alt="CUSTOM GREETING" style="width:80%">
+<img src="greeting card.jpg" alt="CUSTOM GREETING" style="height: 300px;
+  width: 80%;">
 <h1 class="w3-center">Custom Greetings</h1>
 </div>
 
 <div class="w3-third">
-<img src="gift sets.jpg" alt="GIFT SETS" style="width:80%">
+<img src="gift sets.jpg" alt="GIFT SETS" style="height: 300px;
+  width: 80%;">
 <h1 class="w3-center">Gift Sets</h1>
 </div>
 
@@ -79,3 +99,15 @@ Email: personalscents1@gmail.com<br>
 
 <img src="map.jpg" class="w3-image" style="width:100%">
 </div>
+</body>
+
+<div class="w3-container">
+  <div class="w3-container w3-brown">
+  
+  <p> &copy; 2024 PERSONAL SCENTS . PERSONAL SCRIPT</p>
+
+</div>
+
+</body>
+</html> 
+
